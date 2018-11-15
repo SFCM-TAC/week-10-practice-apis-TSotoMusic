@@ -1,5 +1,5 @@
 var speciesL = null;
-var speciesA = [];
+var speciesA = null;
 // var species1 = null;
 // var species2 = null;
 // var species3 = null;
@@ -30,7 +30,7 @@ species.send();
 species.onload = function() {
   var response = species.response;
   var parsed = JSON.parse(response);
-  parsed.results.name = speciesA
+  speciesA = parsed.results
   console.log(speciesA);
 // for (i=0; i < speciesA.length; i++) {
 // }
