@@ -32,8 +32,8 @@ var par = document.getElementById('imageDiv');
     case "1":
       var img = document.getElementById('image');
       img.src = 'images/hutt.png';
-      img.style.maxHeight = '100%';
-      img.style.maxWidth = '100%';
+      img.style.maxHeight = '150%';
+      img.style.maxWidth = '150%';
       break;
     case "2":
       var img = document.getElementById('image');
@@ -43,27 +43,27 @@ var par = document.getElementById('imageDiv');
       break;
     case "3":
       var img = document.getElementById('image');
-      img.src = 'images/trandoshan.png';
+      img.src = 'images/trandoshan1.png';
       img.style.maxHeight = '75%';
       img.style.maxWidth = '75%';
       break;
     case "4":
       var img = document.getElementById('image');
-      img.src = 'images/monCalamari.jpg';
+      img.src = 'images/monCalamari.png';
       img.style.maxHeight = '75%';
       img.style.maxWidth = '75%';
       break;
     case "5":
       var img = document.getElementById('image');
-      img.src = 'images/ewok.jpg';
+      img.src = 'images/ewok.png';
       img.style.maxHeight = '100%';
       img.style.maxWidth = '100%';
       break;
     case "6":
       var img = document.getElementById('image');
-      img.src = 'images/sullustan.jpg';
-      img.style.maxHeight = '65%';
-      img.style.maxWidth = '65%';
+      img.src = 'images/sullustan.png';
+      img.style.maxHeight = '100%';
+      img.style.maxWidth = '100%';
       break;
     case "7":
       var img = document.getElementById('image');
@@ -73,21 +73,21 @@ var par = document.getElementById('imageDiv');
       break;
     case "8":
       var img = document.getElementById('image');
-      img.src = 'images/gungan.jpg';
+      img.src = 'images/gungan.png';
       img.style.maxHeight = '75%';
       img.style.maxWidth = '75%';
       break;
     case "9":
       var img = document.getElementById('image');
-      img.src = 'images/toydarian.jpg';
+      img.src = 'images/toydarian.png';
       img.style.maxHeight = '75%';
       img.style.maxWidth = '75%';
       break;
     case "10":
       var img = document.getElementById('image');
-      img.src = 'images/dug.jpg';
-      img.style.maxHeight = '60%';
-      img.style.maxWidth = '60%';
+      img.src = 'images/dug.png';
+      img.style.maxHeight = '100%';
+      img.style.maxWidth = '100%';
       break;
   }
   console.log(event.target.id)
