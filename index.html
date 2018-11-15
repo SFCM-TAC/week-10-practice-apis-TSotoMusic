@@ -3,22 +3,23 @@
     <script src="script.js"></script>
       <link rel="stylesheet" href="css/styles.css">
   </head>
-  <body>
-    <div class='image'>
+  <body style='background-color: #FFEDA4'>
+    <div id='imageDiv'>
+      <img src = null id="image">
     </div>
     <div class="dropdown">
-  <button onclick="speciesList()" class="dropbtn">Dropdown</button>
+  <button onclick="speciesList()" class="dropbtn">Select Species</button>
   <div id="myDropdown" class="dropdown-content">
-    <a id='1' href="javascript:loadImage">Hutt</a>
-    <a id='2' href="javascript:loadImage">Yoda's Species</a>
-    <a id='3' href="javascript:loadImage">Trandoshan</a>
-    <a id='4' href="javascript:loadImage">Mon Calamari</a>
-    <a id='5' href="javascript:loadImage">Ewok</a>
-    <a id='6' href="javascript:loadImage">Sullustan</a>
-    <a id='7' href="javascript:loadImage">Neimodian</a>
-    <a id='8' href="javascript:loadImage">Gungan</a>
-    <a id='9' href="javascript:loadImage">Toydarian</a>
-    <a id='10' href="javascript:loadImage">Dug</a>
+    <a id='1' onclick='loadImage(event)'>Hutt</a>
+    <a id='2' onclick='loadImage(event)'>Yoda's Species</a>
+    <a id='3' onclick='loadImage(event)'>Trandoshan</a>
+    <a id='4' onclick='loadImage(event)'>Mon Calamari</a>
+    <a id='5' onclick='loadImage(event)'>Ewok</a>
+    <a id='6' onclick='loadImage(event)'>Sullustan</a>
+    <a id='7' onclick='loadImage(event)'>Neimodian</a>
+    <a id='8' onclick='loadImage(event)'>Gungan</a>
+    <a id='9' onclick='loadImage(event)'>Toydarian</a>
+    <a id='10' onclick='loadImage(event)'>Dug</a>
   </div>
 </div>
   </body>

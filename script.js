@@ -1,15 +1,6 @@
 var speciesL = null;
 var speciesA = null;
-// var species1 = null;
-// var species2 = null;
-// var species3 = null;
-// var species4 = null;
-// var species5 = null;
-// var species6 = null;
-// var species7 = null;
-// var species8 = null;
-// var species9 = null;
-// var species10 = null;
+
 
 var starWars = new XMLHttpRequest();
 starWars.open('GET', 'https://swapi.co/api/', true);
@@ -32,12 +23,75 @@ species.onload = function() {
   var parsed = JSON.parse(response);
   speciesA = parsed.results
   console.log(speciesA);
-// for (i=0; i < speciesA.length; i++) {
-// }
 }
 }
 
-
+function loadImage(event) {
+var par = document.getElementById('imageDiv');
+  switch(event.target.id) {
+    case "1":
+      var img = document.getElementById('image');
+      img.src = 'images/hutt.png';
+      img.style.maxHeight = '100%';
+      img.style.maxWidth = '100%';
+      break;
+    case "2":
+      var img = document.getElementById('image');
+      img.src = 'images/yoda.png';
+      img.style.maxHeight = '75%';
+      img.style.maxWidth = '75%';
+      break;
+    case "3":
+      var img = document.getElementById('image');
+      img.src = 'images/trandoshan.png';
+      img.style.maxHeight = '75%';
+      img.style.maxWidth = '75%';
+      break;
+    case "4":
+      var img = document.getElementById('image');
+      img.src = 'images/monCalamari.jpg';
+      img.style.maxHeight = '75%';
+      img.style.maxWidth = '75%';
+      break;
+    case "5":
+      var img = document.getElementById('image');
+      img.src = 'images/ewok.jpg';
+      img.style.maxHeight = '100%';
+      img.style.maxWidth = '100%';
+      break;
+    case "6":
+      var img = document.getElementById('image');
+      img.src = 'images/sullustan.jpg';
+      img.style.maxHeight = '65%';
+      img.style.maxWidth = '65%';
+      break;
+    case "7":
+      var img = document.getElementById('image');
+      img.src = 'images/neimodian.png';
+      img.style.maxHeight = '50%';
+      img.style.maxWidth = '50%';
+      break;
+    case "8":
+      var img = document.getElementById('image');
+      img.src = 'images/gungan.jpg';
+      img.style.maxHeight = '75%';
+      img.style.maxWidth = '75%';
+      break;
+    case "9":
+      var img = document.getElementById('image');
+      img.src = 'images/toydarian.jpg';
+      img.style.maxHeight = '75%';
+      img.style.maxWidth = '75%';
+      break;
+    case "10":
+      var img = document.getElementById('image');
+      img.src = 'images/dug.jpg';
+      img.style.maxHeight = '60%';
+      img.style.maxWidth = '60%';
+      break;
+  }
+  console.log(event.target.id)
+}
 
 
 /* When the user clicks on the button,
